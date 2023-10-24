@@ -5,5 +5,3 @@
 [node name="NivelTest" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 491, 269 )
-mass = 102.041
