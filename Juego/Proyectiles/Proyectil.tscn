@@ -8,6 +8,7 @@ radius = 9.03174
 height = 26.1896
 
 [node name="Proyectil" type="Area2D"]
+modulate = Color( 0, 0.015625, 1, 1 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

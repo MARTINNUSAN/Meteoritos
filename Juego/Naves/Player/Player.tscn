@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://TemporalAssets/kenney_space-shooter-redux/PNG/player_orange.png" type="Texture" id=1]
 [ext_resource path="res://Juego/Naves/Player/MaterialFisico.tres" type="PhysicsMaterial" id=2]
 [ext_resource path="res://Juego/Naves/Player/Player.gd" type="Script" id=3]
 [ext_resource path="res://Juego/Proyectiles/Canion.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Juego/Proyectiles/Laser/LaserBeam2D.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 41.4683
@@ -35,5 +36,8 @@ position = Vector2( -8, -33 )
 
 [node name="TimerEnfriamiento" parent="Canion" index="3"]
 wait_time = 0.8
+
+[node name="LaserBeam2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 41.2091, -0.528046 )
 
 [editable path="Canion"]
