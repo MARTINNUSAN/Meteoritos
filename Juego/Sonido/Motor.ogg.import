@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Motor.ogg-2adda72010b7bb8e0a8396826a66af57.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonido/Motor.ogg"
+dest_files=[ "res://.import/Motor.ogg-2adda72010b7bb8e0a8396826a66af57.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
