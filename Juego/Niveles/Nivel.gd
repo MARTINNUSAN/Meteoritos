@@ -22,6 +22,8 @@ func _on_nave_destruida(posicion:Vector2) -> void:
 	new_explosion.global_position = posicion
 	add_child(new_explosion)
 	
+	
+	
 func crear_contenedores() -> void:
 	contenedor_proyectiles = Node.new()
 	contenedor_proyectiles.name = "ContenedorProyectiles"

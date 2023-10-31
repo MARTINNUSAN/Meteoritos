@@ -28,6 +28,7 @@ onready var colisionador:CollisionShape2D = $CollisionShape2D
 func _ready() -> void:
 	controlador_estados(estado_actual)
 	
+	
 func destruir() -> void:
 	controlador_estados(ESTADO.MUERTO)
 	
