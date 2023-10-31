@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Juego/Naves/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Juego/Niveles/Nivel.gd" type="Script" id=2]
 [ext_resource path="res://default_env.tres" type="Environment" id=3]
+[ext_resource path="res://Juego/Enemigos/EnemigoDummy.tscn" type="PackedScene" id=4]
 
 [node name="NivelTest" type="Node2D"]
 script = ExtResource( 2 )
@@ -11,3 +12,6 @@ script = ExtResource( 2 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
+
+[node name="EnemigoDummy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 740.825, 305.31 )

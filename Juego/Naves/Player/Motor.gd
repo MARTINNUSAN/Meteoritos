@@ -29,6 +29,8 @@ func efecto_transicion(desde_vol: float, hasta_vol: float) -> void:
 		"volume_db",
 		desde_vol,
 		hasta_vol,
-		tiempo_transicion,Tween.TRANS_LINEAR,Tween.EASE_OUT_IN
+		tiempo_transicion,
+		Tween.TRANS_LINEAR,
+		Tween.EASE_OUT_IN
 	)
 	tween_sonido.start()

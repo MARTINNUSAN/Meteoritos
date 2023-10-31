@@ -28,7 +28,9 @@ onready var colisionador:CollisionShape2D = $CollisionShape2D
 func _ready() -> void:
 	controlador_estados(estado_actual)
 	
-
+func destruir() -> void:
+	controlador_estados(ESTADO.MUERTO)
+	
 ## Señales internas
 
 func _on_AnimationPlayer_animation_finished(anim_name: String) -> void:
@@ -43,7 +45,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("disparo_secundario"):
 		laser.set_is_casting(true)
 	
-	if event.is_action_pressed("disparo_secundario"):
+	if event.is_action_released("disparo_secundario"):
 		laser.set_is_casting(false)
 		
 	#Control estela
