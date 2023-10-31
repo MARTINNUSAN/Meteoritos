@@ -1,3 +1,5 @@
+#Eventos.gd
 extends Node
 
-signal disparo(proyectil)
+signal disparos(proyectil)
+signal nave_destruida(posicion)
