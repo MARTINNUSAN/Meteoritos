@@ -16,4 +16,3 @@ explosion = ExtResource( 5 )
 environment = ExtResource( 3 )
 
 [node name="EnemigoDummy" parent="." instance=ExtResource( 4 )]
-position = Vector2( 740.825, 305.31 )

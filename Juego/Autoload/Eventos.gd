@@ -2,4 +2,4 @@
 extends Node
 
 signal disparos(proyectil)
-signal nave_destruida(posicion)
+signal nave_destruida(posicion, explosiones)

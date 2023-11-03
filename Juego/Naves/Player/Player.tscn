@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://TemporalAssets/kenney_space-shooter-redux/PNG/player_orange.png" type="Texture" id=1]
 [ext_resource path="res://Juego/Naves/Player/MaterialFisico.tres" type="PhysicsMaterial" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Juego/Naves/Player/Estelas/Trail2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Juego/Sonido/Motor.ogg" type="AudioStream" id=7]
 [ext_resource path="res://Juego/Naves/Player/Motor.gd" type="Script" id=8]
+[ext_resource path="res://Juego/Sonido/ImpactoNave.ogg" type="AudioStream" id=9]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 41.4683
@@ -73,6 +74,8 @@ scale = Vector2( 0.520211, 0.975703 )
 points = PoolVector2Array( 0, 0, 60, 0 )
 width = 50.0
 is_emitting = true
+resolution = 5.0
+lifetime = 0.5
 max_points = 150
 target_path = NodePath("..")
 
@@ -85,6 +88,10 @@ script = ExtResource( 8 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "spawn"
 anims/spawn = SubResource( 2 )
+
+[node name="ImpactosSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "SFX"
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 
 [editable path="Canion"]

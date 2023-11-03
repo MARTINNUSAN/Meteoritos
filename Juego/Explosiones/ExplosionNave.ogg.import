@@ -11,5 +11,5 @@ dest_files=[ "res://.import/ExplosionNave.ogg-67d892801a139cf56eff64fdad7fce88.o
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

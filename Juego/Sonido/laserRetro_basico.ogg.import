@@ -11,5 +11,5 @@ dest_files=[ "res://.import/laserRetro_basico.ogg-5632fa2e57979a470fe7337298da36
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

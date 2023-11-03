@@ -11,5 +11,5 @@ dest_files=[ "res://.import/LaserSecundario.ogg-93d9a8b648c1ba2973bd6e192d727204
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
