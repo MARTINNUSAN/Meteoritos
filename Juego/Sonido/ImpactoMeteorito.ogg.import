@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ImpactoMeteorito.ogg-a0f73dd0efd2d05f67edb64c267322bf.oggstr"
+
+[deps]
+
+source_file="res://Juego/Sonido/ImpactoMeteorito.ogg"
+dest_files=[ "res://.import/ImpactoMeteorito.ogg-a0f73dd0efd2d05f67edb64c267322bf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

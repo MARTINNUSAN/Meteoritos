@@ -24,7 +24,7 @@ func daniar(otro_cuerpo: CollisionObject2D) -> void:
 	
 	queue_free()
 	print(otro_cuerpo.name)
-	print(otro_cuerpo.owner.name)
+	
 ##Señales internas
 
 func _on_VisibilityNotifier2D_screen_exited() -> void:
